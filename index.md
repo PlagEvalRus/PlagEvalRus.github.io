@@ -1,37 +1,19 @@
 ## Welcome to GitHub Pages
 
-You can use the [editor on GitHub](https://github.com/PlagEvalRus/PlagEvalRus.github.io/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+В 2016-2017 гг. проходит семинар по оценке алгоритмов поиска заимствований в текстах PlagEvalRus.
 
-### Markdown
+Страница семинара: www.dialog-21.ru/en/evaluation/2017/plageval
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Контактный адрес: plagevalrus@gmail.com
 
-```markdown
-Syntax highlighted code block
+Google-группа участников: https://groups.google.com/forum/#!forum/plagevalrus2017
 
-# Header 1
-## Header 2
-### Header 3
+Дедлайн: Приглашаем участников подать заявку на любом этапе соревнований до подачи результатов.
 
-- Bulleted
-- List
+Данные для тренировки алгоритма
 
-1. Numbered
-2. List
+Данные для обучения и тестирования алгоритмов доступны по адресу:
+https://cloud.mail.ru/public/9XXY/WAfXAWLnW
 
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/PlagEvalRus/PlagEvalRus.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+Подробное описание и инструкция по работе с данными доступны в разделе "Материалы" ниже.
