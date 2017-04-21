@@ -1,0 +1,30 @@
+<header class="site-header">
+
+    <div class="header-wrapper">
+
+        <nav class="site-nav">
+            <ul>
+                <li class="site-title">
+                    <a class="site-title" href="{{ site.baseurl }}/{{ site.index[page.lang] }}">{{ site.title[page.lang] }}</a>
+                </li>
+
+                <li class="trigger">
+                    <a class="page-link" href="/content/corpora/index_data.html">Данные</a>
+                </li>
+                <!-- <li> -->
+                <!-- <a class="page-link" href="/blog.html">Блог</a> -->
+                <!-- </li> -->
+                <!-- <li> -->
+                <!-- <a class="page-link" href="/content/index_data.html">Соревнования</a> -->
+                <!-- </li> -->
+                <li>
+                    <a class="page-link" href="/content/tasks/index_tasks.html">Задания</a>
+                </li>
+                <!-- <li class="lang-trigger"> -->
+                <!-- {% assign pages=site.pages | where:"ref", page.ref | sort: 'lang' %} -->
+                <!-- {% for page in pages %} <a href="{{ page.url | prepend: site.baseurl }}" class="{{ page.lang }}">{{ page.lang }}</a> {% endfor %} -->
+                <!-- </li> -->
+            </ul>
+        </nav>
+    </div>
+</header>

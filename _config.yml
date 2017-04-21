@@ -1,1 +1,13 @@
 theme: jekyll-theme-cayman
+
+# Site settings
+title:
+  en: PlagEvalRus
+  ru: PlagEvalRus
+email: plagevalrus@gmail.com
+description:
+  en: text
+  ru: текст
+index:
+  en: enindex.html
+  ru: index.html

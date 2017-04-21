@@ -1,0 +1,42 @@
+* {
+  margin: 0 auto;
+}
+
+.header-wrapper{
+      /*padding-right: 20em;*/
+      line-height: 2em;
+      background: #e6e6e6;
+      width: 100%;
+      text-align: center;
+      position: absolute;
+}
+
+.site-nav ul{
+  list-style-type: none;
+  max-width: 40em;
+}
+
+
+.site-nav li{
+	float: left;
+  padding: 0;
+}
+
+.site-nav li.site-title{
+    left: 0;
+    position: absolute;
+}
+
+
+.site-nav .lang-trigger{
+  float: right;
+
+}
+
+.site-nav a {
+  padding: 0.88235em 0.5em 0.88235em;
+}
+
+.site-footer{
+    max-height: 3rem;
+}
