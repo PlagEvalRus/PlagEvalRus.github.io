@@ -7,7 +7,7 @@ lang: ru
 
 ### Поиск заимствований
 
-| Название                                  | Данные                                    |
-| -------------                             | :---------------:                         |
-| [source retrieval](source_retrieval.html) | [paraplag](/content/corpora/paraplag.html) |
-| [text alignment](text_alignment.html)     | [paraplag](/content/corpora/paraplag.html) |
+| Название                                                                         | Набор данных                               |
+| -------------                                                                    | :---------------:                          |
+| [Обнаружение источников заимствований (source retrieval)](source_retrieval.html) | [paraplag](/content/corpora/paraplag.html) |
+| [Определение заимствованных фрагментов (text alignment)](text_alignment.html)    | [paraplag](/content/corpora/paraplag.html) |

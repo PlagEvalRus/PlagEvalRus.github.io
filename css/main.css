@@ -2,6 +2,11 @@
   margin: 0 auto;
 }
 
+html, body {
+    height: 100%;
+}
+
+
 .header-wrapper{
       /*padding-right: 20em;*/
       line-height: 2em;
@@ -13,7 +18,7 @@
 
 .site-nav ul{
   list-style-type: none;
-  max-width: 40em;
+  width: 100%;
 }
 
 
@@ -23,8 +28,15 @@
 }
 
 .site-nav li.site-title{
-    left: 0;
-    position: absolute;
+    padding-right: 20rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .site-nav li.site-title{
+        padding-right: 0rem;
+        padding-left: 0rem;
+    }
+
 }
 
 
@@ -37,6 +49,22 @@
   padding: 0.88235em 0.5em 0.88235em;
 }
 
+/* content and footer */
+
+.page-content {
+    min-height: 95%;
+    text-align: justify;
+    /* equal to footer height */
+    margin-bottom: -3rem;
+}
+
+
 .site-footer{
-    max-height: 3rem;
+    height: 3rem;
+    padding-top: 0.5rem !important;
+    padding-bottom: 0.5rem;
+}
+.site-footer ul{
+    list-style: none;
+    overflow-wrap: break-word;
 }
