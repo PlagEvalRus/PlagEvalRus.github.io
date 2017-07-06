@@ -80,5 +80,6 @@ $ python text_alignment_measures.py -p tasks/manually-paraphrased/ -d manually-p
 
 Пример запуска:
 ```bash
+$ mkdir manually-paraphrased-result
 $ python text_alignment_baseline.py tasks/manually-paraphrased/pairs src susp manually-paraphrased-result
 ```
