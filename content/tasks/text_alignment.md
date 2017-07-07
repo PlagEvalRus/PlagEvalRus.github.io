@@ -73,8 +73,8 @@ $ python text_alignment_baseline.py tasks/manually-paraphrased/pairs src susp ma
 ```
 Пример запуска сразу для всех заданий:
 ```bash
-$ mkdir all-result
-$ python text_alignment_baseline.py tasks/pairs src susp manually-paraphrased-result
+$ mkdir all-results
+$ python text_alignment_baseline.py tasks/pairs src susp all-results
 ```
 
 ## Метрики качества
@@ -91,6 +91,6 @@ $ python text_alignment_measures.py --micro -p tasks/manually-paraphrased/ -d ma
 
 Пример запуска сразу для всех заданий:
 ```bash
-$ python text_alignment_measures.py --micro -p tasks/ -d all-result/
+$ python text_alignment_measures.py --micro -p tasks/ -d all-results/
 ```
 
