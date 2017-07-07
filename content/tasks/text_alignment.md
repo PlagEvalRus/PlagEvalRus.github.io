@@ -63,23 +63,34 @@ lang: ru
 В источнике `ABC.txt` текст,
 который был заимствован, начинается с 100-ого символа и имеет длину 150 символов.
 
+## Базовый метод
+В качестве базового метода (`baseline`) используется [программа](https://raw.githubusercontent.com/PlagEvalRus/text_alignment_baseline/master/text_alignment_baseline.py).
+
+Пример запуска только для одного типа заданий:
+```bash
+$ mkdir manually-paraphrased-result
+$ python text_alignment_baseline.py tasks/manually-paraphrased/pairs src susp manually-paraphrased-result
+```
+Пример запуска сразу для всех заданий:
+```bash
+$ mkdir all-result
+$ python text_alignment_baseline.py tasks/pairs src susp manually-paraphrased-result
+```
+
 ## Метрики качества
 
 Для оценки качества обнаружения заимствований используются микро-усредненные точность, полнота и др.
 Подробнее прочитать про использованные метрики можно по [ссылке](http://www.uni-weimar.de/medien/webis/publications/papers/stein_2010p.pdf#page=2).
 Для оценки качества во время обучения нужно использовать [скрипт](https://raw.githubusercontent.com/PlagEvalRus/text_alignment_measures/master/text_alignment_measures.py).
 
-Пример запуска:
+Пример запуска только для одного типа заданий:
 ```bash
-$ python text_alignment_measures.py -p tasks/manually-paraphrased/ -d manually-paraphrased-result/
+$ python text_alignment_measures.py --micro -p tasks/manually-paraphrased/ -d manually-paraphrased-result/
 ```
 где `manually-paraphrased-result` - папка, содержащая результаты обнаружения заимствованных фрагментов для заданий из папки `tasks/manually-paraphrased`.
 
-## Базовый метод
-В качестве базового метода (`baseline`) используется [программа](https://raw.githubusercontent.com/PlagEvalRus/text_alignment_baseline/master/text_alignment_baseline.py).
-
-Пример запуска:
+Пример запуска сразу для всех заданий:
 ```bash
-$ mkdir manually-paraphrased-result
-$ python text_alignment_baseline.py tasks/manually-paraphrased/pairs src susp manually-paraphrased-result
+$ python text_alignment_measures.py --micro -p tasks/ -d all-result/
 ```
+
