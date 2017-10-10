@@ -101,6 +101,6 @@ $ python text_alignment_measures.py --micro -p tasks/ -d all-results/
 Инструкция для получения виртуальной машины и
 доступа к данным размещена на [сайте](http://pan.webis.de/technology.html) (см. секцию *Evaluation as a Service*).
 После установки ПО на выданной виртуальной машине и тестирования на небольшом тренировочном корпусе,
-например ~pan14-text-alignment-mini-dataset~, 
-необходимо запустить прогон на тестовом наборе данных, который называется ~pan17-text-alignment-test-dataset-dialogue17-russian-2017-02-22~.
-После этого нужно запустить ~Evaluator~ для получения метрик качества последнего прогона.
+например `pan14-text-alignment-mini-dataset`, 
+необходимо запустить прогон на тестовом наборе данных, который называется `pan17-text-alignment-test-dataset-dialogue17-russian-2017-02-22`.
+После этого нужно запустить `Evaluator` для получения метрик качества последнего прогона.
