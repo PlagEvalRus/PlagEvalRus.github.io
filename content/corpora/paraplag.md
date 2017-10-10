@@ -118,3 +118,6 @@ lang: ru
 
 
 # Цитирование
+
+При использовании набора данных просьба цитировать публикацию:
+- Sochenkov I.V., Zubarev D.V., Smirnov I.V.: The paraplag: russian dataset for paraphrased plagiarism detection. Computational Linguistics and Intellectual Technologies. Papers from the Annual International Conference "Dialogue" 2017, v. 1, pp. 284–297 (2017)
