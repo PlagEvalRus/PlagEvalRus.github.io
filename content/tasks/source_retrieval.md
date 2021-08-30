@@ -10,7 +10,6 @@ lang: ru
 
 - [Описание задачи](#описание-задачи)
 - [данные](#данные)
-- [Описание набора данных](#описание-набора-данных)
 - [Формат ответа](#формат-ответа)
 - [Метрики качества](#метрики-качества)
 
@@ -25,11 +24,7 @@ lang: ru
 которая содержит около 6 млн. документов.
 
 ## Данные 
-Информация о наборе данных, используемом в этой задаче представлена [здесь](/content/corpora/paraplag.html#использование-в-задаче-source-retrieval).
-
-## Описание набора данных
-В папке tasks в архивах находятся файлы,
-описывающие источники заимствований для каждого текста из папки susp.
+Информация о наборе данных, используемом в этой задаче представлена [здесь](/content/corpora/paraplag_v2.html#использование-в-задаче-source-retrieval).
 
 ## Формат ответа
 Программа обнаружения источников заимствований должна выдавать json-файл с именем `XYZ.json`,
@@ -70,6 +65,6 @@ lang: ru
 Пример запуска:
 
 ```bash
-python source_retrieval_measures.py -p tasks/manually-paraphrased/ -d manually-paraphrased-result
+python source_retrieval_measures.py -p paraplag_v2/cross/essay1/source_retrieval/test/meta/ -d result
 ```
-где `manually-paraphrased-result` - папка, содержащая результаты обнаружения источников для текстов из папки `susp/manually-paraphrased`.
+где `result` - папка, содержащая результаты обнаружения источников для текстов из папки `paraplag_v2/cross/essay1/source_retrieval/test/susp/`.

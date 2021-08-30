@@ -9,7 +9,6 @@ lang: ru
 
 - [Описание задачи](#описание-задачи)
 - [Данные](#данные)
-- [Описание набора данных](#описание-набора-данных)
 - [Формат ответа](#формат-ответа)
 - [Базовый метод](#базовый-метод)
 - [Метрики качества](#метрики-качества)
@@ -24,20 +23,7 @@ lang: ru
 
 
 ## Данные
-Информация о наборе данных, используемом в этой задаче представлена [здесь](/content/corpora/paraplag.html#использование-в-задаче-text-alignment).
-
-## Описание набора данных
-
-В папке `tasks` находятся файлы с заданиями,
-описывающими заимствованные фрагменты.
-Задания сгруппированы в архивах и разделяются по типу заимствований.
-
-Для каждого типа заданий есть файл `pairs`.
-Этот файл перечисляет все пары подозрительных текстов и источников,
-которые нужно сравнить друг с другом.
-Первая колонка в файле указывает на подозрительный текст
-(сам файл находится в директории `susp`),
-вторая колонка указывает на источник (файл находится в директории `src`).
+Информация о наборе данных, используемом в этой задаче представлена [здесь](/content/corpora/paraplag_v2.html#использование-в-задаче-text-alignment).
 
 ## Формат ответа
 
@@ -69,34 +55,25 @@ lang: ru
 
 Пример запуска только для одного типа заданий:
 ```bash
-$ mkdir manually-paraphrased-result
-$ python text_alignment_baseline.py tasks/manually-paraphrased/pairs src susp manually-paraphrased-result
-```
-Пример запуска сразу для всех заданий:
-```bash
-$ mkdir all-results
-$ python text_alignment_baseline.py tasks/pairs src susp all-results
+$ mkdir /tmp/result
+$ cd paraplag_v2/cross/essay1/text_alignment/test
+$ python /path/to/text_alignment_baseline.py meta/pairs src susp /tmp/result
 ```
 
 ## Метрики качества
 
-Для оценки качества обнаружения заимствований используются микро-усредненные точность, полнота и др.
+Для оценки качества обнаружения заимствований используются микро-усредненные точность, полнота и F1.
 Подробнее прочитать про использованные метрики можно по [ссылке](http://www.uni-weimar.de/medien/webis/publications/papers/stein_2010p.pdf#page=2).
-Для оценки качества во время обучения нужно использовать [скрипт](https://raw.githubusercontent.com/PlagEvalRus/text_alignment_measures/master/text_alignment_measures.py).
+Для оценки качества нужно использовать [скрипт](https://raw.githubusercontent.com/PlagEvalRus/text_alignment_measures/master/text_alignment_measures.py).
 
-Пример запуска только для одного типа заданий:
+Пример запуска:
 ```bash
-$ python text_alignment_measures.py --micro -p tasks/manually-paraphrased/ -d manually-paraphrased-result/
+$ python text_alignment_measures.py --micro -p paraplag_v2/cross/essay1/text_alignment/test/meta -d result/
 ```
-где `manually-paraphrased-result` - папка, содержащая результаты обнаружения заимствованных фрагментов для заданий из папки `tasks/manually-paraphrased`.
+где `result` - папка, содержащая результаты обнаружения заимствованных фрагментов для заданий из папки `paraplag_v2/cross/essay1/text_alignment/test/susp`.
 
-Пример запуска сразу для всех заданий:
-```bash
-$ python text_alignment_measures.py --micro -p tasks/ -d all-results/
-```
-
-## Оценка качества на тестовом наборе данных
-Для оценки методов на фиксированном наборе данных используется платформа
+## Оценка качества на закрытом наборе данных
+Для оценки методов на закрытом наборе данных используется платформа
 [tira](http://www.tira.io/tasks/pan/#text-alignment).
 Инструкция для получения виртуальной машины и
 доступа к данным размещена на [сайте](http://pan.webis.de/technology.html) (см. секцию *Evaluation as a Service*).
