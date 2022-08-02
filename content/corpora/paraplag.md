@@ -56,7 +56,7 @@ lang: ru
 ## Использование в задаче source retrieval
 
 #### Загрузка
-Данные доступны для скачивания по [ссылке](https://cloud.mail.ru/public/9XXY/WAfXAWLnW/source_retrieval/).
+Данные доступны для скачивания по [ссылке](http://nlp.isa.ru/plag_corpora/corp16/source_retrieval/).
 
 #### Описание структуры данных
 Все файлы в корпусе разложены по трем папкам:
@@ -98,7 +98,7 @@ lang: ru
 ## Использование в задаче text alignment
 
 #### Загрузка
-Данные доступны для скачивания по [ссылке](https://cloud.mail.ru/public/9XXY/WAfXAWLnW/text_alignment/).
+Данные доступны для скачивания по [ссылке](http://nlp.isa.ru/plag_corpora/corp16/text_alignment/).
 
 #### Описание структуры данных
 
