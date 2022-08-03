@@ -123,4 +123,5 @@ ParaPlag v2 также включает в себя переводную вер�
 # Цитирование
 
 При использовании набора данных просьба цитировать публикацию:
+
 Zubarev, D., Tikhomirov, I., Sochenkov, I. (2022). Cross-Lingual Plagiarism Detection Method. In: Pozanenko, A., Stupnikov, S., Thalheim, B., Mendez, E., Kiselyova, N. (eds) Data Analytics and Management in Data Intensive Domains. DAMDID/RCDL 2021. Communications in Computer and Information Science, vol 1620. Springer, Cham. https://doi.org/10.1007/978-3-031-12285-9_13
